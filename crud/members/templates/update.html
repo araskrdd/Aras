@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Update members</title>
+</head>
+<body>
+
+<center>
+	
+</h1>
+
+<form action="updaterecord/{{ mymember.id }}" method="post">
+{% csrf_token %}
+Name:<br>
+<input name="Name" value="{{ mymember.name }}">
+<br><br>
+Code:<br>
+<input name="Code" value="{{ mymember.code }}">
+<br><br>
+<input type="submit" value="Submit">
+</form>
+
+</center>
+
+</body>
+</html>
